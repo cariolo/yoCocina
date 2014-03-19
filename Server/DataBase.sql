@@ -27,12 +27,12 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `food` (
-  `id_Food` int(11) NOT NULL AUTO_INCREMENT,
+  `id_Food` int(11) NOT NULL,
   `Name` varchar(10) NOT NULL,
   `Kind` varchar(10) NOT NULL,
   `Kcal` int(11) NOT NULL,
   PRIMARY KEY (`id_Food`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS `food` (
 --
 
 CREATE TABLE IF NOT EXISTS `recipe` (
-  `id_Recipe` int(11) NOT NULL AUTO_INCREMENT,
+  `id_Recipe` int(11) NOT NULL,
   `name` varchar(10) NOT NULL,
   `Image` varchar(20) NOT NULL,
   `time_needed` int(11) NOT NULL,
@@ -49,7 +49,7 @@ CREATE TABLE IF NOT EXISTS `recipe` (
   `value` int(11) NOT NULL,
   `difficulty` int(11) NOT NULL,
   PRIMARY KEY (`id_Recipe`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
